@@ -1,0 +1,15 @@
+<nav class="w-full fixed top-0 left-0 py-6 border-b bg-white z-10">
+    <div class="max-w-[1500px] mx-auto px-6">
+        <div class="flex justify-between items-center">
+            <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <img ngSrc="assets/images/airbnb.png" alt="django bnb" width="180" height="38" priority/>
+            </a>
+            <div class="flex space-x-6">
+                <app-search></app-search>
+            </div>
+            <div class="flex items-center space-x-6">
+                <app-add-property-button></app-add-property-button> <app-usernav></app-usernav> 
+            </div>
+        </div>
+    </div>
+</nav>
