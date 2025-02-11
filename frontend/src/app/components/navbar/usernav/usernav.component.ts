@@ -8,5 +8,9 @@ import { MenuLinksComponent } from "../menu-links/menu-links.component";
   styleUrl: './usernav.component.css'
 })
 export class UsernavComponent {
-  isOpen: boolean = true;
+  isOpen: boolean = false;
+
+  setIsOpen(open: boolean) {
+    this.isOpen = open
+  }
 }
