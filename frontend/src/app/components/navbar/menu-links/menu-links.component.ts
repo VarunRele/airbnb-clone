@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu-links',
@@ -8,8 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 export class MenuLinksComponent {
   @Input() label!: string;
+  @Output() onClick = new EventEmitter<void>();
 
-  onClick() {
-    console.log(this.label)
+  handleClick(): void {
+    this.onClick.emit();
   }
 }

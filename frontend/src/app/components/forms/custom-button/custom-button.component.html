@@ -1,3 +1,3 @@
-<div (click)="onClick()" class="{{ className }} w-full py-4 px-3 bg-airbnb hover:bg-airbnb-dark text-white cursor-pointer rounded-xl transition">
+<div (click)="this.onClick.emit()" class="{{ className }} w-full py-4 px-3 bg-airbnb hover:bg-airbnb-dark text-white cursor-pointer rounded-xl transition text-center">
     {{ label }}
 </div>
