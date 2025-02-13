@@ -14,9 +14,10 @@
   <div
     class="w-[220px] absolute top-[60px] right-0 bg-white border border-gray-200 rounded-xl shadow-md flex flex-col cursor-pointer">
     <app-menu-links label="Log in" (onClick)="loginModalService.open(); this.setIsOpen(false)"></app-menu-links>
-    <app-menu-links label="Sign up"></app-menu-links>
+    <app-menu-links label="Sign up" (onClick)="signupModalService.open(); this.setIsOpen(false)"></app-menu-links>
   </div>
   }
 </div>
 
 <app-login-modal></app-login-modal>
+<app-signup-modal></app-signup-modal>

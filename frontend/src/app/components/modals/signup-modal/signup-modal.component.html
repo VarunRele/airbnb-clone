@@ -1,12 +1,14 @@
-<app-modal [isOpen]="loginModalService.isOpen" (close)="loginModalService.close()" label="Login">
+<app-modal [isOpen]="signupModalService.isOpen" (close)="signupModalService.close()" label="Sign up">
     <form action="POST" class="space-y-4">
         <input type="email" name="email" id="email" placeholder="Your e-mail address"
             class="w-full h-[54px] px-4 border border-gray-300 rounded-xl" />
         <input type="password" name="password" id="password" placeholder="Your password"
             class="w-full h-[54px] px-4 border border-gray-300 rounded-xl" />
+        <input type="password" name="password" id="password" placeholder="Repeat password"
+            class="w-full h-[54px] px-4 border border-gray-300 rounded-xl" />
         <div class="p-5 bg-airbnb text-white rounded-xl opacity-80">
             Error Message
         </div>
-        <app-custom-button label="Submit" (onClick)="loginSubmit()"></app-custom-button>
+        <app-custom-button label="Submit" (onClick)="SignUpSubmit()"></app-custom-button>
     </form>
 </app-modal>

@@ -15,6 +15,7 @@ export class ModalComponent implements OnChanges {
   showModal = false;
 
   ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes)
     if (changes['isOpen']) {
       this.showModal = changes['isOpen'].currentValue;
     }
